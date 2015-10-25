@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The two functions cache the inverse of a matrix and either (a) retrieve this value from the cache, or
+## (b) create the inverse freshly and retrieve it.
 
-## Write a short comment describing this function
+## The function makeCacheMatrix is definted with an argument of matrix.
+## Within the function, 'm' is set to NULL locally. Within the 'set' subfunction x is assigned the values
+## of the argument, and 'm' is set to NULL globally. get function retrieves the matrix.
+## setInverse updates the inverse of the matrix to the cache, getInverse retrieves it.
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
